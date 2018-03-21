@@ -1,0 +1,26 @@
+body { 
+    background-color: rgb(148,0,211);
+    font-family: 'Verdana' ;
+    font-size: 16pt;
+    color: white;
+}
+
+h1 {
+    color: white;
+    text-decoration: none;
+    text-align: center; 
+}
+
+a {
+    color: white;
+    font-size: 16pt;
+    text-decoration: none;
+    text-align: none; 
+}
+
+b {
+    color: rgb(3, 1, 10);
+    font-size: 16pt;
+    text-decoration: none;
+    text-align: none; 
+}

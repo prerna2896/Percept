@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Sign up as student </title>
+        <h1> Hey there! Before we move forward, we'd like to know about you. </h1>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+
+    <body>
+        <p>{{msg}}</p>
+        <div class="mentor">
+            <form action="/signup/mentor" method="POST">
+                <input type="text" name="firstname" placeholder="First Name" style="font-size: 12pt" required><br>
+                <input type="text" name="middlename" placeholder="Middle Name" style="font-size: 12pt"><br>
+                <input type="text" name="lastname" placeholder="Last Name" style="font-size: 12pt" required><br>
+                <input type="number" age="age" placeholder="Age" style="font-size: 12pt" required><br>
+                <input type="text" name="profession" placeholder="Profession" style="font-size: 12pt" required><br>
+                <input type="number" year="year" placeholder="Experience" style="font-size: 12pt" required><br>
+                <input type="text" name="interest" placeholder="Interest" style="font-size: 12pt" required><br>
+                <input type="text" name="username" placeholder="User Name" style="font-size: 12pt" required><br>
+                <input type="password" name="password" placeholder="password" style="font-size: 12pt" required><br>
+                <input type="submit" value="Submit" style="font-size: 12pt">
+            </form>
+        </div>
+    </body>
+</html>

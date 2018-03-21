@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Log in </title>
+        <h1> We're happy to have you here. </h1>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+
+    <body>
+        {% if session['logged_in'] %}
+            <p>You're logged in already!</p>
+        {% else %}
+            <div class="login">
+                <form action="/login" method="POST">
+                    <input type="text" name="name" placeholder="User Name" style="font-size: 12pt" required><br>
+                    <input type="password" name="get_pswd" placeholder="password" style="font-size: 12pt" required><br>
+                    <input type="submit" value="Submit" style="font-size: 12pt">
+                </form>
+            </div>
+        {% endif %}
+        <p> {{ msg }} </p> 
+    </body>
+</html>
